@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<title>添加复习计划到日历</title>
+	</head>
+	<body>
+		<form action="add_to_calendar">
+			复习计划：
+			<input name="plan" type="text" require="true" pattern="^(\d+,)*\d+$" value="{{ plan }}" />
+			<br/>
+			起始时间：
+			<input name="start_date" type="date" required="true" value="{{ today }}" />
+			</script>
+			<br/>
+			复习内容：
+			<input name="summary" type="text" required="true" />
+			<br/>
+			注释：
+			<br/>
+			<textarea name="description" rows="3" cols="30"></textarea>
+			<br/>
+			<input type="submit" value="提交" />
+		</form>
+	</body>
+</html>

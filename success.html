@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>提醒成功添加到日历</title>
+	</head>
+	<body>
+	提醒成功添加到日历
+	<p/>
+	复习时间：
+	<br/>
+	{% for i in review_days %}
+		{{ i }}<br/>
+	{% endfor %}
+	<br/>
+	<button onclick="location='/'">返回</button>
+	</body>
+</html>
